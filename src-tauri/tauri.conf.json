@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "tauri-in-app-updater",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "identifier": "at.lzeller.tauri-in-app-updater",
   "build": {
     "beforeDevCommand": "npm run start",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "tauri-in-app-updater",
+        "title": "Tauri-Updater v1",
         "width": 800,
         "height": 600
       }
@@ -35,8 +35,9 @@
   },
   "plugins": {
     "updater": {
-      "endpoints": [],
-      "pubkey": ""
+      "active": true,
+      "endpoints": ["https://gist.githubusercontent.com/QuirkyQueryQuester/6f2e72bfc171cc2f4709c8584eac3a9c/raw/a9ae654d84a2d5271e7134e77c1c8c8f13cc182c/latest.json"],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU2QzZFOTI2M0VCMDYyODYKUldTR1lyQStKdW5HVnZKNW42eDFYTTdWUzNZdWRJUkJGODZHeDRVSGx3NHk5aFlXSmEzeHp1dXQK"
     }
   }
 }

@@ -46,5 +46,6 @@ export class AppComponent {
                 console.log('INSTALL UPDATES')
             }
         }
+
     }
 }
