@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Tauri-Updater v1",
+        "title": "Tauri-Updater v1.0.0",
         "width": 800,
         "height": 600
       }
@@ -36,8 +36,12 @@
   "plugins": {
     "updater": {
       "active": true,
-      "endpoints": ["https://gist.githubusercontent.com/QuirkyQueryQuester/6f2e72bfc171cc2f4709c8584eac3a9c/raw/a9ae654d84a2d5271e7134e77c1c8c8f13cc182c/latest.json"],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU2QzZFOTI2M0VCMDYyODYKUldTR1lyQStKdW5HVnZKNW42eDFYTTdWUzNZdWRJUkJGODZHeDRVSGx3NHk5aFlXSmEzeHp1dXQK"
+      "endpoints": ["https://gist.githubusercontent.com/QuirkyQueryQuester/6f2e72bfc171cc2f4709c8584eac3a9c/raw/latest.json"],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJFNDA1MTA2QTIyOEQzOUMKUldTYzB5aWlCbEZBdnBoc3pUWkNMWC9OQ20rN0JmRlA4alNPdlVQQmsxTWZOeFUyNk9zN2F4S2IK",
+      "windows": {
+        "installMode": "passive"
+      }
     }
   }
 }
